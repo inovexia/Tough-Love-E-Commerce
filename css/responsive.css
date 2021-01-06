@@ -1,9 +1,0 @@
-@media only screen and (max-width: 767px) {
-  .home-banner {
-    background-position: 45% center;
-    height: 400px;
-  }
-  .just-in-banner.banner {
-    background-position: 18% center;
-  }
-}

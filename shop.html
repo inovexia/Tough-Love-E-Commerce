@@ -6,50 +6,54 @@
     <title>Tough Love E-Commerce</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.js.map"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js.map"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
     <header>
       <div class="top-header secondary-bg-color py-2 d-none d-lg-block">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-12 px-2">
+            <div class="col-12">
               <ul
                 class="list-unstyled d-flex w-100 justify-content-end m-0 p-0 text-right top-menu"
               >
                 <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none text-dark">Help</a>
+                  <a href="#" class="text-decoration-none">Help</a>
                 </li>
                 <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none text-dark"
-                    >About Us</a
-                  >
+                  <a href="#" class="text-decoration-none">About Us</a>
                 </li>
                 <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none text-dark">Sign In</a>
+                  <a href="#" class="text-decoration-none">Sign In</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="middle-header py-2 position-relative">
-        <div class="container">
+      <div class="middle-header py-0 position-relative">
+        <div class="container-fluid">
           <div class="row">
             <nav
-              class="navbar navbar-expand-lg navbar-light d-flex w-100 justify-content-between p-0"
+              class="navbar navbar-expand-lg navbar-light d-flex w-100 justify-content-between px-2"
             >
-              <div class="col-4 col-lg-2 px-2">
-                <a class="navbar-brand" href="#" style="width: 125px"
-                  ><img src="./images/logo.png" alt="" class="w-100"
+              <div class="col-4 col-lg-2 px-0">
+                <a class="navbar-brand" href="#" style="width: 82px"
+                  ><img src="./images/logo2.png" alt="" class="w-100"
                 /></a>
               </div>
-              <div class="col-2 col-lg-7 order-3 order-lg-2 px-2">
-                <button class="navbar-toggler border-0 float-right">
+              <div class="col-2 col-lg-7 order-3 order-lg-2 px-0 px-md-2">
+                <button class="navbar-toggler border-0 float-right px-0">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -57,7 +61,7 @@
                   <ul
                     class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center"
                   >
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="#">Dried Cannabis</a>
                     </li>
                     <li class="nav-item">
@@ -80,7 +84,7 @@
               </div>
 
               <div
-                class="col-6 col-lg-3 d-flex justify-content-end order-2 order lg-3 px-2"
+                class="col-6 col-lg-3 d-flex justify-content-end order-2 order lg-3 px-0"
               >
                 <form
                   class="form-inline my-2 my-lg-0 d-none d-lg-block"
@@ -110,7 +114,7 @@
             </nav>
           </div>
         </div>
-        <div class="mob-menu position-absolute">
+        <div id="mob-menu" class="mob-menu position-absolute">
           <ul class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center">
             <li class="nav-item active">
               <a class="nav-link" href="#">Dried Cannabis</a>
@@ -134,21 +138,23 @@
         </div>
       </div>
 
-      <div class="bottom-heder secondary-bg-color py-3">
-        <div class="container">
+      <div class="bottom-header secondary-bg-color py-3">
+        <div class="container-fluid">
           <div class="row">
-            <p class="w-100 text-center text-dark m-0 p-0">
-              Free shiping on all orders over $200 within Canada
+            <p class="w-100 text-center text-dark m-0 py-1 hm-r notification">
+              <span class="position-relative"
+                >Free shipping on all orders over $200 within Canada</span
+              >
             </p>
           </div>
         </div>
       </div>
     </header>
-    <section class="py-5">
-      <div class="container">
+    <section class="py-4 mt-1">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-lg-6 px-2">
-            <h3>Dried Cannabis Flower (283)</h3>
+            <h3 class="side-bar-title hn-m">Dried Cannabis Flower (283)</h3>
           </div>
           <div class="col-12 col-lg-6 text-right px-2">
             <div class="filters d-flex justify-content-end">
@@ -481,7 +487,7 @@
           <div class="col-12 col-md-9 col-lg-10 px-2 order-1 order-md-2">
             <div class="product-list mx-2">
               <div class="row justify-content-between mt-2">
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -494,20 +500,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -520,20 +524,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -546,21 +548,19 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -573,20 +573,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -599,20 +597,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -625,21 +621,19 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -652,20 +646,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -678,20 +670,18 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4">
+                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -704,14 +694,12 @@
                       >
                         <div class="col-12 col-md-9">
                           <a href="#" class="text-decoration-none text-dark">
-                            <h5 class="card-title m-0" style="color: #121212">
+                            <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
                           </a>
-                          <span class="py-2 d-block" style="color: #525252"
-                            >Men's Shoe</span
-                          >
-                          <p style="color: #121212">$200</p>
+                          <span class="py-2 d-block pdt-type">Men's Shoe</span>
+                          <p class="pdt-price">$200</p>
                         </div>
                       </div>
                     </div>
@@ -728,8 +716,8 @@
       <div class="footer-bottom py-5" style="background-color: #141414">
         <div class="secondary-container">
           <div class="row">
-            <div class="col-12 col-md-4">
-              <ul class="footer-menu-list p-0 list-unstyled">
+            <div class="col-12 col-md-3">
+              <ul class="footer-menu-list-light p-0 list-unstyled">
                 <li>
                   <a
                     href="#"
@@ -760,8 +748,8 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-4">
-              <h4 class="mb-3 text-white text-uppercase">Find A Store</h4>
+            <div class="col-12 col-md-3 footer-widgets">
+              <h5 class="mb-3 text-white text-uppercase">Find A Store</h5>
               <ul class="footer-menu-list p-0 list-unstyled">
                 <li>
                   <a href="#" class="text-decoration-none">Order Status</a>
@@ -782,7 +770,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-3 footer-widgets">
               <h5 class="mb-3 text-white text-uppercase">About Hush</h5>
               <ul class="footer-menu-list p-0 list-unstyled">
                 <li>
@@ -796,6 +784,32 @@
                 </li>
                 <li>
                   <a href="#" class="text-decoration-none">Sustainability</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 footer-widgets">
+              <ul
+                class="footer-menu-list social-icon p-0 list-unstyled d-block"
+              >
+                <li class="d-inline-block">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fa fa-youtube-play"></i>
+                  </a>
+                </li>
+                <li class="d-inline-block">
+                  <a href="#" class="text-decoration-none"
+                    ><i class="fa fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>
