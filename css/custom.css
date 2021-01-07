@@ -373,4 +373,8 @@
     letter-spacing: -2.63px;
     color: #2e2e2e;
   }
+  .container-fluid {
+    max-width: 1920px;
+    margin: 0px auto;
+  }
 }
