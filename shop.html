@@ -6,17 +6,9 @@
     <title>Tough Love E-Commerce</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css" />
     <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/swiper-bundle.js.map"></script>
-    <script type="text/javascript" src="js/swiper-bundle.min.js.map"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
     <header>
@@ -77,8 +69,14 @@
                       <a class="nav-link" href="#">New releases</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0 d-lg-none">
-                    <input class="mr-sm-2" type="search" />
+                  <form
+                    class="form-inline my-2 my-lg-0 d-lg-none search-form-header"
+                  >
+                    <input
+                      class="mr-sm-2 form-input-box"
+                      type="search"
+                      placeholder="Search"
+                    />
                   </form>
                 </div>
               </div>
@@ -87,12 +85,16 @@
                 class="col-6 col-lg-3 d-flex justify-content-end order-2 order lg-3 px-0"
               >
                 <form
-                  class="form-inline my-2 my-lg-0 d-none d-lg-block"
+                  class="form-inline my-2 my-lg-0 d-none d-lg-block search-form-header"
                   style="max-width: 180px"
                 >
-                  <input class="form-control w-100" type="search" />
+                  <input
+                    class="form-control w-100 form-input-box"
+                    type="search"
+                    placeholder="Search"
+                  />
                 </form>
-                <ul class="mx-0 mt-0 list-unstyled d-flex mb-0">
+                <ul class="mx-0 mt-0 list-unstyled d-flex mb-0 header-icon">
                   <li class="mx-3">
                     <a
                       class="text-decoration-none text-dark"
@@ -159,7 +161,7 @@
             <div class="filters d-flex justify-content-end">
               <div class="hide-filters mr-3">
                 Hide Filters
-                <span class="pl-2"><i class="fa fa-bars"></i> </span>
+                <span class="pl-2"><i class="fa fa-filter"></i> </span>
               </div>
               <div class="filter-menu dropsown">
                 <button
@@ -255,7 +257,10 @@
                     data-target="#flower"
                   >
                   </span>
-                  <div id="flower" class="flower-list-toggle py-3">
+                  <div
+                    id="flower"
+                    class="flower-list-toggle collapse show py-3"
+                  >
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -298,7 +303,7 @@
                     data-target="#grade"
                   >
                   </span>
-                  <div id="grade" class="flower-list-toggle pt-3">
+                  <div id="grade" class="flower-list-toggle collapse show pt-3">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -341,7 +346,7 @@
                     data-target="#price"
                   >
                   </span>
-                  <div id="price" class="flower-list-toggle pt-3">
+                  <div id="price" class="flower-list-toggle collapse show pt-3">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -394,7 +399,10 @@
                     data-target="#onsale"
                   >
                   </span>
-                  <div id="onsale" class="flower-list-toggle pt-3">
+                  <div
+                    id="onsale"
+                    class="flower-list-toggle collapse show pt-3"
+                  >
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -417,7 +425,7 @@
                     data-target="#brand"
                   >
                   </span>
-                  <div id="brand" class="flower-list-toggle pt-3">
+                  <div id="brand" class="flower-list-toggle collapse show pt-3">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -486,7 +494,7 @@
           <div class="col-12 col-md-9 col-lg-10 px-2 order-1 order-md-2">
             <div class="product-list mx-2">
               <div class="row justify-content-between mt-2">
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -510,7 +518,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -534,7 +542,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
@@ -559,11 +567,11 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes4.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -571,7 +579,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -583,11 +594,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes5.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -595,7 +606,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -607,11 +621,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes6.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -619,7 +633,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -632,11 +649,11 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes1.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -644,7 +661,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -656,11 +676,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes2.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -668,7 +688,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -680,11 +703,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
+                <div class="col-12 col-sm-6 col-lg-4 px-2 mb-4 mb-lg-5 pb-2">
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.html">
                           <img src="./images/shoes3.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -692,7 +715,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters pt-3"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.html"
+                            class="text-decoration-none text-dark"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Forece 1
                             </h5>
@@ -711,11 +737,10 @@
       </div>
     </section>
     <footer>
-      <div class="footer-top py-5"></div>
       <div class="footer-bottom py-5" style="background-color: #141414">
         <div class="secondary-container">
           <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 px-2">
               <ul class="footer-menu-list-light p-0 list-unstyled">
                 <li>
                   <a
@@ -747,7 +772,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-3 footer-widgets">
+            <div class="col-12 col-md-3 footer-widgets px-2">
               <h5 class="mb-3 text-white text-uppercase">Find A Store</h5>
               <ul class="footer-menu-list p-0 list-unstyled">
                 <li>
@@ -769,7 +794,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-3 footer-widgets">
+            <div class="col-12 col-md-3 footer-widgets px-2">
               <h5 class="mb-3 text-white text-uppercase">About Hush</h5>
               <ul class="footer-menu-list p-0 list-unstyled">
                 <li>
@@ -786,7 +811,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-3 footer-widgets">
+            <div class="col-12 col-md-3 footer-widgets px-2">
               <ul
                 class="footer-menu-list social-icon p-0 list-unstyled d-block"
               >
@@ -814,7 +839,45 @@
             </div>
           </div>
         </div>
+        <div class="secondary-container border-top-footer">
+          <div class="row below-footer pt-3">
+            <div class="col-12 col-md-6 mb-2 px-2">
+              <p class="hn-l">
+                2020 Hush Cannabis Club Inc. All Rights Reserved
+              </p>
+            </div>
+            <div class="col-12 col-md-6 mb-2 px-2">
+              <ul class="below-footer-menu text-left text-md-right">
+                <li class="d-block d-md-inline-block">
+                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Guides</a>
+                </li>
+                <li class="d-block d-md-inline-block">
+                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Terms Of Use</a>
+                </li>
+                <li class="d-block d-md-inline-block">
+                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Terms Of Sale</a>
+                </li>
+                <li class="d-block d-md-inline-block">
+                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Company Details</a>
+                </li>
+                <li class="d-block d-md-inline-block">
+                  <a class="ml-0 ml-md-2 ml-lg-3" href="#"
+                    >Privacy & Cookie Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap Bundle -->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <!-- Tough Love Theme Script -->
+    <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
