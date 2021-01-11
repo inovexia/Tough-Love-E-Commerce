@@ -288,7 +288,6 @@
     content: "";
     background-repeat: no-repeat;
   }
-
   .d-icon.collapsed::after {
     background: url("../images/Icon ionic-ios-arrow-back-2.svg");
     background-size: 9px 15px;
