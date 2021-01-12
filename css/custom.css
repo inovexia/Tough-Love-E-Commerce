@@ -691,22 +691,40 @@
   }
 
   .notification span::after {
-    content: "\f105";
-    font-family: "fontawesome";
+    background: url("../images/Icon ionic-ios-arrow-back-2.svg");
+    background-size: 9px 15px;
+    height: 15px;
+    width: 9px;
     position: absolute;
-    right: -50%;
+    top: 2px;
+    right: -10%;
+    content: "";
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
   }
   .notification span::before {
-    content: "\f104";
-    font-family: "fontawesome";
+    background: url("../images/Icon ionic-ios-arrow-back-2.svg");
+    background-size: 9px 15px;
+    height: 15px;
+    width: 9px;
     position: absolute;
-    left: -50%;
+    top: 2px;
+    left: -10%;
+    content: "";
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
   }
 }
 
 @media (min-width: 992px) {
   .header-icon li a {
     display: block;
+  }
+  .notification span::after {
+    right: -40%;
+  }
+  .notification span::before {
+    left: -40%;
   }
 }
 
