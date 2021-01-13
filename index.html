@@ -37,19 +37,41 @@
         <div class="container-fluid">
           <div class="row">
             <nav
-              class="navbar navbar-expand-lg navbar-light d-flex w-100 justify-content-between px-2"
+              class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2"
             >
-              <div class="col-4 col-lg-3 px-0">
+              <div class="col col-md-2 col-lg-3 px-0">
                 <a class="navbar-brand" href="#" style="width: 82px"
                   ><img src="./images/logo2.png" alt="" class="w-100"
                 /></a>
               </div>
-              <div class="col-2 col-lg-6 order-3 order-lg-2 px-0 px-md-2">
+              <div
+                class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view"
+              >
+                <ul
+                  class="mx-0 mt-0 list-unstyled d-flex d-md-none mb-0 header-icon"
+                >
+                  <li class="heart-like">
+                    <a
+                      class="text-decoration-none text-dark"
+                      style="font-size: 20px"
+                      href="#"
+                      ><img src="images/Image 9.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="cart">
+                    <a
+                      class="text-decoration-none text-dark"
+                      style="font-size: 20px"
+                      href="#"
+                      ><img src="images/Image 1.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
                 <button class="navbar-toggler border-0 float-right px-0">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="d-none d-lg-block">
+                <div class="d-none d-md-block d-lg-block">
                   <ul
                     class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center"
                   >
@@ -70,7 +92,7 @@
                     </li>
                   </ul>
                   <form
-                    class="form-inline my-2 my-lg-0 d-lg-none search-form-header"
+                    class="form-inline my-2 my-lg-0 d-md-none search-form-header"
                   >
                     <input
                       class="mr-sm-2 form-input-box"
@@ -82,10 +104,10 @@
               </div>
 
               <div
-                class="col-6 col-lg-3 d-flex justify-content-end order-2 order lg-3 px-0"
+                class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon"
               >
                 <form
-                  class="form-inline my-2 my-lg-0 d-none d-lg-block search-form-header"
+                  class="form-inline my-2 my-lg-0 d-none d-md-block search-form-header"
                   style="max-width: 180px"
                 >
                   <input
@@ -156,7 +178,36 @@
     </header>
     <section class="banner-section">
       <div class="container-fluid">
-        <div class="row">
+        <div class="home-banner swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="new-home-banner slider1 position-relative swiper-slide"
+              style="background-image: url('images/home-banner2.jpg')"
+            >
+              <div class="banner-content d-none d-md-block position-absolute">
+                <span class="hn-b">Pegasus 2 Gore tek gear</span>
+                <h1 class="py-2 hn-l">IN YOUR ELEMENT</h1>
+                <a href="shop.html" class="btn primary-btn px-3 m-0">
+                  SHOP NOW
+                </a>
+              </div>
+            </div>
+            <div
+              class="new-home-banner slider2 position-relative swiper-slide"
+              style="background-image: url('images/banner-home.jpg')"
+            >
+              <div class="banner-content d-none d-md-block position-absolute">
+                <span class="hn-b">Pegasus 2 Gore tek gear</span>
+                <h1 class="py-2 hn-l">IN YOUR ELEMENT</h1>
+                <a href="shop.html" class="btn primary-btn px-3 m-0">
+                  SHOP NOW
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-none">
           <div class="col position-relative px-2">
             <img
               src="images/1682x792.jpg"
@@ -188,7 +239,7 @@
           <a href="#" class="slider-view text-decoration-none px-2">View All</a>
         </div>
         <div class="row justify-content-between">
-          <div class="swiper swiper-container">
+          <div class="product-slider swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="col-12 col-md-6 col-lg-4 mb-4 px-2 swiper-slide">
                 <div class="product-card">
@@ -329,7 +380,7 @@
           <a href="#" class="slider-view text-decoration-none px-2">View All</a>
         </div>
         <div class="row justify-content-between">
-          <div class="swiper swiper-container">
+          <div class="product-slider swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="col-12 col-md-6 col-lg-4 mb-4 px-2 swiper-slide">
                 <div class="product-card">
@@ -418,6 +469,35 @@
                   </div>
                 </div>
               </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-4 px-2 swiper-slide">
+                <div class="product-card">
+                  <div class="product-card-body">
+                    <div class="product-image">
+                      <a href="product.html">
+                        <img src="./images/pdt6.jpg" alt="" class="w-100" />
+                      </a>
+                    </div>
+                    <div
+                      class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
+                    >
+                      <div class="col-12 col-md-9">
+                        <a
+                          href="product.html"
+                          class="text-decoration-none text-dark"
+                        >
+                          <h5 class="card-title pdt-title">
+                            Nike Air Forece 1
+                          </h5>
+                        </a>
+                        <span class="pdt-type">Men's Shoe</span>
+                      </div>
+                      <div class="col-12 col-md-3 text-left text-md-right">
+                        <span class="pdt-price">$200</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -430,7 +510,21 @@
             <h4 class="">Just In</h4>
           </div>
         </div>
-        <div class="row">
+        <div class="justin-slides row d-block px-2">
+          <div class="just-in-slides swiper-container">
+            <div class="swiper-wrapper">
+              <div
+                class="just-in-slider swiper-slide"
+                style="background-image: url('images/1807x675.jpg')"
+              ></div>
+              <div
+                class="just-in-slider swiper-slide"
+                style="background-image: url('images/1807x675.jpg')"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-none">
           <div class="col position-relative px-2">
             <img
               src="images/shoe-bg.jpg"
@@ -504,7 +598,7 @@
           <a href="#" class="slider-view text-decoration-none px-2">View All</a>
         </div>
         <div class="row justify-content-between">
-          <div class="swiper swiper-container">
+          <div class="product-slider swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="col-12 col-md-4 mb-4 px-2 swiper-slide">
                 <div class="product-card">
@@ -570,7 +664,7 @@
       <div class="footer-top py-5">
         <div class="container">
           <div class="row f-menu">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
               <h4 class="f-menu-title">Shoes</h4>
               <ul class="footer-menu-list p-0 list-unstyled d-none d-md-block">
                 <li>
@@ -587,7 +681,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
               <h4 class="f-menu-title">Clothing</h4>
               <ul class="footer-menu-list p-0 list-unstyled d-none d-md-block">
                 <li>
@@ -606,7 +700,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
               <h4 class="f-menu-title">Kid's</h4>
               <ul class="footer-menu-list p-0 list-unstyled d-none d-md-block">
                 <li>
@@ -623,7 +717,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-3 col-lg-3">
               <h4 class="f-menu-title">Featured</h4>
               <ul class="footer-menu-list p-0 list-unstyled d-none d-md-block">
                 <li>

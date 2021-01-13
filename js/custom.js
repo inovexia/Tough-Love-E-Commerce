@@ -1,9 +1,28 @@
 jQuery(document).ready(function () {
-  var swiper = new Swiper(".swiper", {
+  var swiper1 = new Swiper(".home-banner", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+  });
+  var swiper3 = new Swiper(".just-in-slides", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+  });
+
+  var swiper2 = new Swiper(".product-slider", {
     slidesPerView: 3,
     spaceBetween: 0,
-
     loop: true,
+
     coverflow: {
       rotate: 40,
       stretch: 0,
@@ -17,7 +36,7 @@ jQuery(document).ready(function () {
         spaceBetween: 0,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 0,
       },
       1024: {
@@ -26,6 +45,7 @@ jQuery(document).ready(function () {
       },
     },
   });
+
   jQuery(".navbar-toggler-icon").click(function (event) {
     jQuery(".mob-menu").toggleClass("open");
     event.stopPropagation();
