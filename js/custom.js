@@ -18,10 +18,14 @@ jQuery(document).ready(function () {
     },
   });
 
-  var swiper2 = new Swiper(".product-slider", {
-    slidesPerView: 3,
-    spaceBetween: 0,
+  var swiper2 = new Swiper(".product-slider, .product-page-slider", {
+    slidesPerView: 1.1,
+    spaceBetween: 15,
     loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
 
     coverflow: {
       rotate: 40,
@@ -32,16 +36,14 @@ jQuery(document).ready(function () {
     },
     breakpoints: {
       640: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 1.1,
       },
       768: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+        slidesPerView: 1.6,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 0,
+        loop: true,
       },
     },
   });

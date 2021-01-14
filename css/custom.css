@@ -135,10 +135,18 @@
     font-family: "HN-B";
   }
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: "HN-M";
     font-weight: normal;
     color: #121212;
+  }
+
+  .justin-slides,
+  .trending-slides,
+  .trending-now,
+  .banner-slider,
+  .bottom-header {
+    overflow-x: hidden !important;
   }
   [type="search"] {
     outline: none;
@@ -571,7 +579,7 @@
 
   .trending-now h4 {
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
   }
   .trending-section {
     padding-top: 28px;
