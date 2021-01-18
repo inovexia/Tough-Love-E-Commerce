@@ -1,3 +1,8 @@
+// jQuery(window).on("load", function () {
+//   setTimeout(function () {
+//     jQuery("#enquirypopup").modal("show");
+//   }, 3000);
+// });
 jQuery(document).ready(function () {
   var swiper1 = new Swiper(".home-banner", {
     slidesPerView: 1,
@@ -42,6 +47,10 @@ jQuery(document).ready(function () {
         slidesPerView: 1.6,
       },
       1024: {
+        slidesPerView: 3.1,
+        loop: true,
+      },
+      1920: {
         slidesPerView: 3,
         loop: true,
       },
@@ -51,5 +60,16 @@ jQuery(document).ready(function () {
   jQuery(".navbar-toggler-icon").click(function (event) {
     jQuery(".mob-menu").toggleClass("open");
     event.stopPropagation();
+  });
+
+  jQuery(".login-form").click(function (e) {
+    e.preventDefault();
+    jQuery("#enquirypopup").modal("hide");
+    jQuery("#signinpopup").modal("show");
+  });
+  jQuery(".joinus").click(function (e) {
+    e.preventDefault();
+    jQuery("#signinpopup").modal("hide");
+    jQuery("#enquirypopup").modal("show");
   });
 });

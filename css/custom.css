@@ -50,8 +50,16 @@
 }
 
 @media (min-width: 0) {
+  .header-icon li a img {
+    width: 23px;
+    height: 23px;
+  }
+  .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .tab-view .header-icon li {
-    margin-right: 26px;
+    margin-right: 19px;
   }
   .tab-view ul li {
     display: table;
@@ -60,7 +68,7 @@
   }
   .tab-view ul li a {
     display: table-cell;
-    vertical-align: top;
+    vertical-align: middle;
   }
   .search-and-icon {
     display: none;
@@ -202,10 +210,10 @@
     /* Microsoft Edge */
     color: #cccccc;
   }
-  .cart a img {
+  /* .cart a img {
     width: 27px;
     height: 27px;
-  }
+  } */
   .header-icon li {
     margin-left: 26px;
   }
@@ -708,6 +716,15 @@
 }
 
 @media (min-width: 768px) {
+  #enquirypopup .modal-content {
+    padding: 32px !important;
+  }
+  .custom-modal-header p {
+    padding: 0px 40px;
+  }
+  #enquirypopup .modal-dialog {
+    width: 100%;
+  }
   .just-in-slider {
     height: 515px;
   }
@@ -775,6 +792,13 @@
 }
 
 @media (min-width: 992px) {
+  .tab-view .header-icon li {
+    margin-right: 26px;
+  }
+  .header-icon li a img {
+    width: 27px;
+    height: 27px;
+  }
   body .navbar-light .navbar-nav .nav-link {
     font-size: 14px;
   }
@@ -800,6 +824,9 @@
 }
 
 @media (min-width: 1200px) {
+  .custom-modal-header p {
+    padding: 0px 55px;
+  }
   .tab-view ul li {
     margin: 0px;
   }
@@ -850,3 +877,208 @@
     margin: 0px auto;
   }
 }
+
+/* Contact Form Popup CSS */
+
+#enquirypopup .modal-dialog {
+  width: 90%;
+  max-width: 440px;
+  padding: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#enquirypopup .modal-content {
+  border-radius: 0px;
+  padding: 20px 15px;
+}
+
+.custom-modal-header {
+  text-align: center;
+}
+
+#enquirypopup .modal-dialog .close {
+  z-index: 99999999;
+  color: #000;
+  text-shadow: 0px 0px 0px;
+  font-weight: normal;
+  top: 10px;
+  right: 16px;
+  position: absolute;
+  opacity: 1;
+}
+#enquirypopup .custom-control-label::after,
+#enquirypopup .custom-control-label::before {
+  left: -8px;
+}
+#enquirypopup .form-inline .custom-control-label {
+  padding-left: 15px;
+}
+
+#enquirypopup .custom-modal-header .modal-title {
+  line-height: 22px;
+  font-size: 26px;
+  padding: 30px 0px 22px;
+}
+#enquirypopup.sign-in-popup .custom-modal-header .modal-title {
+  line-height: 26px;
+}
+.custom-modal-header p {
+  font-size: 12px;
+  color: #575757;
+  font-family: "HN-L";
+  line-height: 16px;
+}
+.custom-modal-header p {
+  font-size: 12px;
+  color: #575757;
+  font-family: "HN-L";
+  line-height: 16px;
+}
+#enquirypopup .modal-body {
+  margin-top: 12px;
+  padding: 0px 10px;
+}
+#enquirypopup .form-control {
+  color: #959595;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  font-family: "HN-L";
+  font-size: 13px;
+  padding: 10px;
+  height: unset;
+}
+#enquirypopup input::placeholder {
+  font-family: "HN-L";
+  font-size: 13px;
+  color: #959595;
+  font-family: "HN-L";
+}
+.form-group {
+  margin-bottom: 15px !important;
+}
+
+.form-inline .form-control {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.date-field::after {
+  position: absolute;
+  content: "\f133";
+  font-family: "fontawesome";
+  right: 25px;
+}
+.custom-checkbox label {
+  font-size: 12px;
+  color: #575757;
+  font-family: "Hn-L";
+}
+.custom-checkbox {
+  margin: 5px 0px 18px 0px;
+}
+.terms-and-pp,
+.sign-in {
+  font-size: 12px;
+  color: #575757;
+  font-family: "HN-L";
+}
+.terms-and-pp a,
+.sign-in a {
+  color: #000;
+  text-decoration: none;
+}
+.join-us-btn button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  font-family: "HN-L";
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.join-us-btn button:hover {
+  color: #fff;
+}
+.join-us-btn {
+  margin: 12px 0px 18px;
+}
+.forget-password {
+  color: #b5b5b5;
+  font-size: 12px;
+  font-family: "HN-L";
+  text-align: right;
+}
+.forget-password:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* END */
+/* Sign-in CSS */
+#signinpopup .modal-dialog {
+  width: 90%;
+  max-width: 440px;
+  padding: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#signinpopup .modal-content {
+  border-radius: 0px;
+  padding: 20px 15px;
+}
+
+#signinpopup .modal-dialog .close {
+  z-index: 99999999;
+  color: #000;
+  text-shadow: 0px 0px 0px;
+  font-weight: normal;
+  top: 10px;
+  right: 16px;
+  position: absolute;
+  opacity: 1;
+}
+#signinpopup .custom-control-label::after,
+#signinpopup .custom-control-label::before {
+  left: -8px;
+}
+#signinpopup .form-inline .custom-control-label {
+  padding-left: 15px;
+}
+
+#signinpopup .custom-modal-header .modal-title {
+  line-height: 22px;
+  font-size: 26px;
+  padding: 30px 0px 22px;
+}
+#signinpopup.sign-in-popup .custom-modal-header .modal-title {
+  line-height: 26px;
+}
+
+#signinpopup .modal-body {
+  margin-top: 12px;
+  padding: 0px 10px;
+}
+#signinpopup .form-control {
+  color: #959595;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  font-family: "HN-L";
+  font-size: 13px;
+  padding: 10px;
+  height: unset;
+}
+#signinpopup input::placeholder {
+  font-family: "HN-L";
+  font-size: 13px;
+  color: #959595;
+  font-family: "HN-L";
+}
+#enquirypopup.modal {
+  position: absolute;
+  height: auto;
+}
+
+/* END */
