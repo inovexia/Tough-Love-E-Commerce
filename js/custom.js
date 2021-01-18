@@ -22,7 +22,6 @@ jQuery(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
   var swiper2 = new Swiper(".product-slider, .product-page-slider", {
     slidesPerView: 1.1,
     spaceBetween: 15,
