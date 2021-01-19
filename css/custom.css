@@ -654,12 +654,9 @@
     padding: 10px 15px;
   }
   .product-details {
-    max-width: 325px;
     width: 100%;
   }
-  .product-detail-outer {
-    padding-left: 0.5rem;
-  }
+
   .additional-details .collapse-menu {
     padding: 25px 3px;
   }
@@ -824,6 +821,10 @@
 }
 
 @media (min-width: 1200px) {
+  .product-details {
+    max-width: 325px;
+    width: 100%;
+  }
   .custom-modal-header p {
     padding: 0px 55px;
   }
@@ -849,7 +850,7 @@
   }
 
   .product-detail-outer {
-    padding-left: 52px;
+    padding-left: 45px;
   }
   .card-border-bottom {
     padding-bottom: 147px;
