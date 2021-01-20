@@ -1,7 +1,16 @@
 @font-face {
-  font-family: "HN-R";
+  font-family: "HN-N";
   src: url("../fonts/helveticaneue/normal/helveticaneue.woff2") format("woff2"),
     url("../fonts/helveticaneue/normal/helveticaneue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HN-R";
+  src: url("../fonts/helveticaneue/regular/helvetica_neue_regular.woff2")
+      format("woff2"),
+    url("../fonts/helveticaneue/regular/helvetica_neue_regular.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,6 +59,118 @@
 }
 
 @media (min-width: 0) {
+  .contact-section {
+    margin: 128px auto 80px;
+  }
+  .contact-area-outer {
+    margin-bottom: 20px;
+  }
+  .contact-numbers {
+    width: 100%;
+    max-width: 844px;
+  }
+  .contact-area {
+    width: 100%;
+    max-width: 1138px;
+    margin: 0px auto;
+    padding: 25px 22px;
+    border: 1px solid #e5e5e5;
+  }
+  .contact-area h1,
+  .contact-area h3 {
+    font-size: 28px;
+    color: #000;
+    font-family: "HN-M";
+    line-height: 22px;
+    margin-bottom: 7px;
+  }
+  .contact-numbers h6 {
+    margin: 0px;
+    padding: 5px 0px 5px;
+  }
+  .contact-area hr {
+    border-top: 1px solid #f6f6f6;
+    margin: 20px 0px;
+  }
+  .grid-area {
+    width: 100%;
+    max-width: 329px;
+    display: inline-block;
+  }
+  .contact-area.contact-area-1 hr {
+    margin: 0px 0px 18px;
+  }
+  .quick-desc {
+    font-size: 16px;
+    color: #000;
+    font-family: "HN-R";
+  }
+  .grid-area h6 {
+    font-size: 16px;
+  }
+  .grid-area ul li {
+    padding: 2px 0px;
+  }
+  .grid-area ul li,
+  .grid-area ul li a {
+    font-size: 13px;
+    font-family: "HN-R";
+    color: #000;
+  }
+  .contact-numbers ul li,
+  .contact-numbers ul li a {
+    color: #777777;
+    font-family: "HN-R";
+    font-size: 16px;
+  }
+  .contect-area h6 {
+    font-size: 16px;
+    font-family: "HN-M";
+  }
+  .contect-area .quick-desc {
+    font-size: 16px;
+    color: #000;
+    font-family: "HN-L";
+  }
+  .contact-area.contact-area-form hr {
+    margin-bottom: 25px;
+  }
+  .contact-area.contact-area-form {
+    padding-bottom: 40px;
+  }
+  .input-outer {
+    margin-right: 30px;
+  }
+  .form-control.submit-button {
+    height: 49px;
+    padding: 0;
+  }
+  .input-outer input {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    color: #ededed;
+    font-size: 16px;
+    font-family: "HN-M";
+    padding: 24px;
+  }
+  .input-outer input::placeholder,
+  .input-outer input:-ms-input-placeholder,
+  .input-outer input::-ms-input-placeholder {
+    color: #000;
+    font-size: 16px;
+    font-family: "HN-M";
+  }
+  .input-outer:last-child {
+    margin-right: 0px;
+  }
+  .input-outer .submit-button {
+    background: #ededed 0% 0% no-repeat padding-box;
+    color: #000;
+  }
+  .product-detail-outer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .header-icon li a img {
     width: 23px;
     height: 23px;
@@ -821,6 +942,9 @@
 }
 
 @media (min-width: 1200px) {
+  .product-area .container-fluid {
+    max-width: 1330px;
+  }
   .product-details {
     max-width: 325px;
     width: 100%;
@@ -850,7 +974,7 @@
   }
 
   .product-detail-outer {
-    padding-left: 45px;
+    padding-left: 51px;
   }
   .card-border-bottom {
     padding-bottom: 147px;
