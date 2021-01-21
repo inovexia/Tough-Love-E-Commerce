@@ -59,22 +59,142 @@
 }
 
 @media (min-width: 0) {
+  /* Cart */
+  .cart-section {
+    margin-top: 48px;
+  }
+  .checkout {
+    background-color: #000;
+    font-size: 16px;
+    font-family: "HN-M";
+  }
+  .checkout:hover {
+    color: #fff;
+  }
+  .checkout {
+    background-color: #000;
+    font-size: 16px;
+    font-family: "HN-M";
+    border-radius: 50px;
+    color: #fff;
+    padding: 17px 10px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .total {
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    padding: 15px 0px !important;
+    margin-top: 10px;
+  }
+  .cart-section h5 {
+    font-size: 22px;
+    font-family: "HN-M";
+    color: #121212;
+    margin-bottom: 30px;
+  }
+  .cart-summary ul li {
+    font-size: 16px;
+    font-family: "Hn-L";
+    padding: 5px 0px;
+  }
+  .cart-item {
+    padding-bottom: 35px;
+  }
+  .item-detail {
+    margin-left: 32px;
+  }
+  .item-detail p,
+  .item-detail h6 {
+    margin-bottom: 0;
+    line-height: 16px;
+    font-size: 16px;
+    padding: 4px 0px;
+  }
+  .item-detail a {
+    text-decoration: underline;
+    color: #919191;
+    font-size: 16px;
+    margin-top: 22px;
+    display: block;
+  }
+  .item-thumbnail {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-image: url("../images/pdt3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  /* End Cart */
+  .tab-view .header-icon li {
+    display: inline-block;
+  }
+  .cart-section .container-fluid {
+    width: 100%;
+    max-width: 1080px;
+  }
+  .contact-section .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #accordionExample .grid-area h6 {
+    cursor: pointer;
+    margin: 0px;
+  }
+  #accordionExample .grid-area ul {
+    margin-bottom: 0px;
+  }
+  #accordionExample .grid-area ul li {
+    padding: 8px 0px;
+  }
+  #accordionExample .grid-area ul li:last-child {
+    padding: 8px 0px 0px;
+  }
+  #accordionExample .grid-area {
+    max-width: 100%;
+    padding: 20px 22px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .collapse-control::after {
+    content: "\f068";
+    font-family: "Fontawesome";
+    right: 0;
+    position: absolute;
+    font-weight: lighter;
+  }
+  .collapse-control.collapsed::after {
+    content: "\f067";
+  }
+  .contact-box-outer {
+    margin-bottom: 80px;
+  }
   .contact-section {
     margin: 128px auto 80px;
   }
   .contact-area-outer {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .contact-numbers {
     width: 100%;
     max-width: 844px;
   }
+  #accordionExample {
+    margin-right: -22px;
+    margin-left: -22px;
+  }
+  #accordionExample .grid-area:last-child {
+    border-bottom: 0px;
+  }
+
   .contact-area {
     width: 100%;
-    max-width: 1138px;
+    max-width: 1140px;
     margin: 0px auto;
-    padding: 25px 22px;
-    border: 1px solid #e5e5e5;
+    padding: 25px 22px 0px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 0;
   }
   .contact-area h1,
   .contact-area h3 {
@@ -90,7 +210,10 @@
   }
   .contact-area hr {
     border-top: 1px solid #f6f6f6;
-    margin: 20px 0px;
+    margin: 20px -22px;
+  }
+  .area-1 .contact-area hr {
+    border-top: 1px solid #e5e5e5;
   }
   .grid-area {
     width: 100%;
@@ -98,7 +221,7 @@
     display: inline-block;
   }
   .contact-area.contact-area-1 hr {
-    margin: 0px 0px 18px;
+    margin: 0px -22px 0px;
   }
   .quick-desc {
     font-size: 16px;
@@ -834,6 +957,18 @@
 }
 
 @media (min-width: 768px) {
+  .area-2.contact-area-outer .contact-area {
+    padding: 25px 22px;
+  }
+  .contact-area-outer .contact-area {
+    padding: 25px 22px 0px;
+  }
+  .contact-area {
+    padding: 25px 22px;
+  }
+  .contact-box-outer {
+    margin-bottom: 0px;
+  }
   #enquirypopup .modal-content {
     padding: 32px !important;
   }
@@ -938,6 +1073,34 @@
   }
   .notification span::before {
     left: -40%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-area-outer .contact-area {
+    padding: 25px 22px;
+  }
+  .area-1 .contact-area hr {
+    border-top: 1px solid #f6f6f6;
+  }
+  .contact-area-outer {
+    margin-bottom: 20px;
+  }
+  .contact-section .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact-area hr {
+    margin: 20px 0px;
+  }
+  body .contact-area.contact-area-1 hr {
+    margin: 0px 0px 18px;
+  }
+  .contact-area {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 25px 22px;
+    border: 1px solid #e5e5e5;
   }
 }
 
