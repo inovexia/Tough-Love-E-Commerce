@@ -56,10 +56,10 @@ jQuery(document).ready(function () {
     },
   });
 
-  jQuery(".navbar-toggler-icon").click(function (event) {
-    jQuery(".mob-menu").toggleClass("open");
-    event.stopPropagation();
-  });
+  // jQuery(".navbar-toggler-icon").click(function (event) {
+  //   jQuery(".mob-menu").toggleClass("open");
+  //   event.stopPropagation();
+  // });
 
   jQuery(".login-form").click(function (e) {
     e.preventDefault();
@@ -70,5 +70,32 @@ jQuery(document).ready(function () {
     e.preventDefault();
     jQuery("#signinpopup").modal("hide");
     jQuery("#enquirypopup").modal("show");
+  });
+});
+
+jQuery(document).ready(function (jQuery) {
+  var open = false;
+
+  var openSidebar = function () {
+    jQuery(".mob-menu").addClass("open");
+    jQuery(".overlay1").addClass("active-opacity");
+    open = true;
+  };
+  var closeSidebar = function () {
+    jQuery(".mob-menu").removeClass("open");
+    jQuery(".overlay1").removeClass("active-opacity");
+    open = false;
+  };
+
+  jQuery(".navbar-toggler-icon, .close-menu").click(function (event) {
+    event.stopPropagation();
+    var toggle = open ? closeSidebar : openSidebar;
+    toggle();
+  });
+
+  jQuery(document).click(function (event) {
+    if (!jQuery(event.target).closest(".mob-menu,.close-menu").length) {
+      closeSidebar();
+    }
   });
 });

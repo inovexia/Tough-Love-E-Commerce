@@ -1,344 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tough Love E-Commerce</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-
-    <div id="enquirypopup" class="modal fade in px-0" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header custom-modal-header d-block border-0 p-0">
-            <div class="form-logo mx-auto" style="width: 82px">
-              <img src="./images/logo2.png" alt="" class="w-100" />
-            </div>
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h4 class="modal-title text-uppercase">BECOME A MEMBER</h4>
-            <p>
-              Create your Nike Member profile and get first access to the very
-              best of Nike products, inspiration and community.
-            </p>
-          </div>
-          <div class="modal-body">
-            <form name="info_form" class="form-inline" action="#" method="post">
-              <div class="form-group col-sm-12">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="form-group col-sm-12">
-                <input
-                  type="password"
-                  class="form-control"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
-              </div>
-              <div class="form-group col-sm-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="f-name"
-                  id="f-name"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="form-group col-sm-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="l-name"
-                  id="l-name"
-                  placeholder="Last Name"
-                />
-              </div>
-
-              <div class="form-group col-sm-12 date-field position-relative">
-                <input
-                  class="form-control"
-                  onfocus="(this.type='date')"
-                  onblur="(this.type='text')"
-                  type="text"
-                  name="b-date"
-                  id="b-date"
-                  placeholder="Date of Birth"
-                />
-              </div>
-
-              <div class="custom-control custom-checkbox col-sm-12">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="terms"
-                />
-                <label class="custom-control-label" for="terms"
-                  >Sign up for emails to get updates from Nike on products,
-                  offers and your Member benefits</label
-                >
-              </div>
-              <p class="col-sm-12 text-center terms-and-pp">
-                By creating an account, you agree to Nike’s
-                <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
-              </p>
-              <div class="text-center col-sm-12 join-us-btn">
-                <button type="submit" class="btn btn-default">JOIN US</button>
-              </div>
-            </form>
-            <p class="col-sm-12 text-center sign-in">
-              Already a member?
-              <a href="#" class="signin login-form">Sign In</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="signinpopup"
-      class="modal fade in px-0 sign-in-popup"
-      role="dialog"
-    >
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header custom-modal-header d-block border-0 p-0">
-            <div class="form-logo mx-auto" style="width: 82px">
-              <img src="./images/logo2.png" alt="" class="w-100" />
-            </div>
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h4 class="modal-title text-uppercase">
-              YOUR ACCOUNT FOR EVERYTHING HUSH
-            </h4>
-          </div>
-          <div class="modal-body">
-            <form name="info_form" class="form-inline" action="#" method="post">
-              <div class="form-group col-sm-12">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="form-group col-sm-12">
-                <input
-                  type="password"
-                  class="form-control"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
-              </div>
-
-              <div
-                class="custom-control custom-checkbox col-sm-12 d-flex justify-content-between"
-              >
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="terms"
-                />
-                <label class="custom-control-label" for="terms"
-                  >Keep me signed in</label
-                >
-                <a href="#" class="forget-password">Forgotten your password?</a>
-              </div>
-              <p class="col-sm-12 text-center terms-and-pp">
-                By logging in, you agree to Nike’s
-                <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
-              </p>
-              <div class="text-center col-sm-12 join-us-btn">
-                <button type="submit" class="btn btn-default">SIGN IN</button>
-              </div>
-            </form>
-            <p class="col-sm-12 text-center sign-in">
-              Not a member? <a href="#" class="joinus">Join US</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </head>
-  <body>
-    <header>
-      <div class="top-header secondary-bg-color d-none d-lg-block">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 px-2">
-              <ul
-                class="list-unstyled d-flex w-100 justify-content-end m-0 p-0 text-right top-menu"
-              >
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none">Help</a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none">About Us</a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none login-form"
-                    >Sign In</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="middle-header py-0 position-relative">
-        <div class="container-fluid">
-          <div class="row">
-            <nav
-              class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2"
-            >
-              <div class="col col-md-2 col-lg-3 px-0">
-                <a class="navbar-brand" href="#" style="width: 82px"
-                  ><img src="./images/logo2.png" alt="" class="w-100"
-                /></a>
-              </div>
-              <div
-                class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view"
-              >
-                <ul
-                  class="mx-0 mt-0 list-unstyled d-flex d-md-none mb-0 header-icon"
-                >
-                  <li class="cart">
-                    <a
-                      class="text-decoration-none text-dark"
-                      style="font-size: 20px"
-                      href="cart.html"
-                      ><img src="images/Image 1.svg" alt="" />
-                    </a>
-                  </li>
-                  <li class="heart-like">
-                    <a
-                      class="text-decoration-none text-dark"
-                      style="font-size: 20px"
-                      href="#"
-                      ><img src="images/Image 9.svg" alt=""
-                    /></a>
-                  </li>
-                </ul>
-                <button class="navbar-toggler border-0 float-right px-0">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="d-none d-md-block d-lg-block">
-                  <ul
-                    class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center"
-                  >
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Dried Cannabis</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Concentrates</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Vape Pens</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Edibles</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">New releases</a>
-                    </li>
-                  </ul>
-                  <form
-                    class="form-inline my-2 my-lg-0 d-md-none search-form-header"
-                  >
-                    <input
-                      class="mr-sm-2 form-input-box"
-                      type="search"
-                      placeholder="Search"
-                    />
-                  </form>
-                </div>
-              </div>
-
-              <div
-                class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon"
-              >
-                <form
-                  class="form-inline my-2 my-lg-0 d-none d-md-block search-form-header"
-                  style="max-width: 180px"
-                >
-                  <input
-                    class="form-control w-100 form-input-box"
-                    type="search"
-                    placeholder="Search"
-                  />
-                </form>
-                <ul class="mx-0 mt-0 list-unstyled d-flex mb-0 header-icon">
-                  <li class="heart-like">
-                    <a
-                      class="text-decoration-none text-dark"
-                      style="font-size: 20px"
-                      href="#"
-                      ><img src="images/Image 9.svg" alt=""
-                    /></a>
-                  </li>
-                  <li class="cart">
-                    <a
-                      class="text-decoration-none text-dark"
-                      style="font-size: 20px"
-                      href="cart.html"
-                      ><img src="images/Image 1.svg" alt="" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div id="mob-menu" class="mob-menu position-absolute">
-          <ul class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Dried Cannabis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Concentrates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Vape Pens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Edibles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">New releases</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 d-lg-none">
-            <input class="form-control mr-sm-2" type="search" />
-          </form>
-        </div>
-      </div>
-
-      <div class="bottom-header secondary-bg-color py-3">
-        <div class="container-fluid">
-          <div class="row">
-            <p
-              class="w-100 text-center m-0 py-1 hm-r notification position-relative"
-            >
-              <span class="position-relative"
-                >Free shipping on all orders over $200 within Canada</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="py-4 mt-1">
+<?php include "inc/header.php"; ?>
+    <section class="py-4 mt-1 shop-page">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-lg-6 px-2">
@@ -376,62 +37,62 @@
               <div class="all-category">
                 <ul class="list-unstyled p-0 category-list">
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Shatter</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Live resin</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Pre Rolls Joints</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Diamonds & Sauce</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Organic Cannabis</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Vape Pen Tips</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >The Budder</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Bulk Flower & Concentrates</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >New Releases</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Edibles</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Variety Packs</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none text-dark"
+                    <a href="#" class="text-decoration-none"
                       >Accessories & Equipment</a
                     >
                   </li>
@@ -448,7 +109,7 @@
                   </span>
                   <div
                     id="flower"
-                    class="flower-list-toggle collapse show py-3"
+                    class="flower-list-toggle collapse show"
                   >
                     <div class="custom-control custom-checkbox">
                       <input
@@ -492,7 +153,7 @@
                     data-target="#grade"
                   >
                   </span>
-                  <div id="grade" class="flower-list-toggle collapse show pt-3">
+                  <div id="grade" class="flower-list-toggle collapse show">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -535,7 +196,7 @@
                     data-target="#price"
                   >
                   </span>
-                  <div id="price" class="flower-list-toggle collapse show pt-3">
+                  <div id="price" class="flower-list-toggle collapse show">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -590,7 +251,7 @@
                   </span>
                   <div
                     id="onsale"
-                    class="flower-list-toggle collapse show pt-3"
+                    class="flower-list-toggle collapse show"
                   >
                     <div class="custom-control custom-checkbox">
                       <input
@@ -614,7 +275,7 @@
                     data-target="#brand"
                   >
                   </span>
-                  <div id="brand" class="flower-list-toggle collapse show pt-3">
+                  <div id="brand" class="flower-list-toggle collapse show">
                     <div class="custom-control custom-checkbox">
                       <input
                         type="checkbox"
@@ -687,7 +348,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.php">
                           <img src="./images/shoes1.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -695,7 +356,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.php"
+                            class="text-decoration-none"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
                             </h5>
@@ -711,7 +375,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.php">
                           <img src="./images/shoes2.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -719,7 +383,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.php"
+                            class="text-decoration-none"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
                             </h5>
@@ -735,7 +402,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="#">
+                        <a href="product.php">
                           <img src="./images/shoes3.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -743,7 +410,10 @@
                         class="product-card-footer d-block d-md-flex justify-content-between no-gutters"
                       >
                         <div class="col-12 col-md-9">
-                          <a href="#" class="text-decoration-none text-dark">
+                          <a
+                            href="product.php"
+                            class="text-decoration-none"
+                          >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
                             </h5>
@@ -760,7 +430,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes4.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -769,8 +439,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -787,7 +457,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes5.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -796,8 +466,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -814,7 +484,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes6.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -823,8 +493,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -842,7 +512,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes1.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -851,8 +521,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -869,7 +539,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes2.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -878,8 +548,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -896,7 +566,7 @@
                   <div class="product-card">
                     <div class="product-card-body">
                       <div class="product-image">
-                        <a href="product.html">
+                        <a href="product.php">
                           <img src="./images/shoes3.jpg" alt="" class="w-100" />
                         </a>
                       </div>
@@ -905,8 +575,8 @@
                       >
                         <div class="col-12 col-md-9">
                           <a
-                            href="product.html"
-                            class="text-decoration-none text-dark"
+                            href="product.php"
+                            class="text-decoration-none"
                           >
                             <h5 class="card-title m-0 pdt-title">
                               Nike Air Force 1
@@ -926,150 +596,4 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer-bottom py-5" style="background-color: #141414">
-        <div class="secondary-container">
-          <div class="row">
-            <div class="col-12 col-md-3">
-              <ul class="footer-menu-list-light p-0 list-unstyled">
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-uppercase text-white"
-                    >Find A Store</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-uppercase text-white"
-                    >Sign up for email</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-uppercase text-white"
-                    >Become a member</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none text-uppercase text-white"
-                    >Send us feedback</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-3 footer-widgets">
-              <h5 class="mb-3 text-white text-uppercase">Find A Store</h5>
-              <ul class="footer-menu-list p-0 list-unstyled">
-                <li>
-                  <a href="#" class="text-decoration-none">Order Status</a>
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none"
-                    >Shipping & Delivery</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none">Returns</a>
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none">Payment Options</a>
-                </li>
-                <li>
-                  <a href="quick-assists.html" class="text-decoration-none"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-3 footer-widgets">
-              <h5 class="mb-3 text-white text-uppercase">About Hush</h5>
-              <ul class="footer-menu-list p-0 list-unstyled">
-                <li>
-                  <a href="#" class="text-decoration-none">News</a>
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none">Careers</a>
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none">Investors</a>
-                </li>
-                <li>
-                  <a href="#" class="text-decoration-none">Sustainability</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-3 footer-widgets">
-              <ul
-                class="footer-menu-list social-icon p-0 list-unstyled d-block"
-              >
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fa fa-youtube-play"></i>
-                  </a>
-                </li>
-                <li class="d-inline-block">
-                  <a href="#" class="text-decoration-none"
-                    ><i class="fa fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="secondary-container border-top-footer">
-          <div class="row below-footer pt-3">
-            <div class="col-12 col-md-6 mb-2">
-              <p class="hn-l">
-                2020 Hush Cannabis Club Inc. All Rights Reserved
-              </p>
-            </div>
-            <div class="col-12 col-md-6 mb-2">
-              <ul class="below-footer-menu text-left text-md-right">
-                <li class="d-block d-md-inline-block">
-                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Guides</a>
-                </li>
-                <li class="d-block d-md-inline-block">
-                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Terms Of Use</a>
-                </li>
-                <li class="d-block d-md-inline-block">
-                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Terms Of Sale</a>
-                </li>
-                <li class="d-block d-md-inline-block">
-                  <a class="ml-0 ml-md-2 ml-lg-3" href="#">Company Details</a>
-                </li>
-                <li class="d-block d-md-inline-block">
-                  <a class="ml-0 ml-md-2 ml-lg-3" href="#"
-                    >Privacy & Cookie Policy</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap Bundle -->
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-    <!-- Tough Love Theme Script -->
-    <script type="text/javascript" src="js/custom.js"></script>
-  </body>
-</html>
+    <?php include "inc/footer.php"; ?>
