@@ -99,3 +99,11 @@ jQuery(document).ready(function (jQuery) {
     }
   });
 });
+
+// jQuery(document).ready(function () {
+//   jQuery(".custom-radio-btn").click(function () {
+//     jQuery(".custom-radio").removeClass("active-btn");
+//     jQuery(this).parent().addClass("active-btn");
+//     return false;
+//   });
+// });

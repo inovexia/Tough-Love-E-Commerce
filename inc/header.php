@@ -44,7 +44,7 @@
               class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2"
             >
               <div class="col col-md-2 col-lg-3 px-0">
-                <a class="navbar-brand" href="/tl" style="width: 82px"
+                <a class="navbar-brand" href="/" style="width: 82px"
                   ><img src="./images/logo2.png" alt="" class="w-100"
                 /></a>
               </div>
