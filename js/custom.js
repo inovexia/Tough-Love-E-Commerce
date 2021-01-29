@@ -1,109 +1,194 @@
-// jQuery(window).on("load", function () {
-//   setTimeout(function () {
-//     jQuery("#enquirypopup").modal("show");
-//   }, 3000);
-// });
-jQuery(document).ready(function () {
-  var swiper1 = new Swiper(".home-banner", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-  });
-  var swiper3 = new Swiper(".just-in-slides", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-  });
-  var swiper2 = new Swiper(".product-slider, .product-page-slider", {
-    slidesPerView: 1.1,
-    spaceBetween: 15,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+(function ($) {
+  $(document).ready(function () {
+    let open = false;
+    new Swiper(".home-banner", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    });
+    new Swiper(".just-in-slides", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    });
+    new Swiper(".product-slider, .product-page-slider", {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
 
-    coverflow: {
-      rotate: 40,
-      stretch: 0,
-      depth: 50,
-      modifier: 1,
-      slideShadows: false,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 1.1,
+      coverflow: {
+        rotate: 40,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows: false,
       },
-      768: {
-        slidesPerView: 1.6,
+      breakpoints: {
+        640: {
+          slidesPerView: 1.1,
+        },
+        768: {
+          slidesPerView: 1.6,
+        },
+        1024: {
+          slidesPerView: 3.1,
+          loop: true,
+        },
+        1920: {
+          slidesPerView: 3,
+          loop: true,
+        },
       },
-      1024: {
-        slidesPerView: 3.1,
-        loop: true,
-      },
-      1920: {
-        slidesPerView: 3,
-        loop: true,
-      },
-    },
-  });
+    });
 
-  // jQuery(".navbar-toggler-icon").click(function (event) {
-  //   jQuery(".mob-menu").toggleClass("open");
-  //   event.stopPropagation();
+    $(".open-suite").click(function () {
+      $(this).parent().toggleClass("suite-open");
+      $("#suite-open").removeClass("suite-hidden");
+      $("#suite-open").addClass("suite-show");
+    });
+
+    // $(".navbar-toggler-icon").click(function (event) {
+    //   $(".mob-menu").toggleClass("open");
+    //   event.stopPropagation();
+    // });
+
+    $(".login-form").click(function (e) {
+      e.preventDefault();
+      $("#enquirypopup").modal("hide");
+      $("#signinpopup").modal("show");
+    });
+    $(".joinus").click(function (e) {
+      e.preventDefault();
+      $("#signinpopup").modal("hide");
+      $("#enquirypopup").modal("show");
+    });
+
+    const openSidebar = function () {
+      $(".mob-menu").addClass("open");
+      $(".overlay1").addClass("active-opacity");
+      open = true;
+    };
+    const closeSidebar = function () {
+      $(".mob-menu").removeClass("open");
+      $(".overlay1").removeClass("active-opacity");
+      open = false;
+    };
+
+    $(".navbar-toggler-icon, .close-menu").click(function (event) {
+      event.stopPropagation();
+      const toggle = open ? closeSidebar : openSidebar;
+      toggle();
+    });
+
+    $(document).click(function (event) {
+      if (!$(event.target).closest(".mob-menu,.close-menu").length) {
+        closeSidebar();
+      }
+    });
+
+    // $(".radio-content .radio_content:first-child").show();
+    $(".radio_btn_label").click(function () {
+      let current_radio = $(this).attr("data-radio");
+      $(".radio-content .radio_content").removeClass("active");
+      $(".custom-radio").removeClass("active");
+      $(this).addClass("active");
+
+      $("." + current_radio).addClass("active");
+    });
+    $(".selected-shipping .custom-radio").click(function () {
+      $(".custom-radio").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    $(".continue").click(function (e) {
+      e.preventDefault();
+      $(".edit").removeClass("show");
+      $(".address-form").hide();
+      $(".editable-address-outer").addClass("show");
+      $(".address-form").removeClass("show");
+    });
+    $(".add-new-address-btn").click(function (e) {
+      e.preventDefault();
+      $(".suite-checkbox").removeClass("suite-open");
+      $("#suite-open").removeClass("suite-show");
+      $("#suite-open").addClass("suite-hidden");
+      $(".editable-address-outer").removeClass("show");
+      $(".address-form").addClass("show");
+    });
+    $(".continue-to-payment").click(function (e) {
+      e.preventDefault();
+      $(".editable-address-outer").removeClass("show");
+      $(".shipping-detail-added").addClass("show");
+      $(".payment-form-outer").addClass("show");
+      $(".edit").addClass("show");
+      $("#payment").addClass("show");
+    });
+    $(".edit").click(function (e) {
+      e.preventDefault();
+      $(this).removeClass("show");
+      $(".payment-edit").removeClass("show");
+      $(".payment-review").removeClass("show");
+      $("#review-order").removeClass("show");
+      $(".payment-form-outer").removeClass("show");
+      $(".shipping-detail-added").removeClass("show");
+      $(".editable-address-outer").removeClass("show");
+      $(".address-form").addClass("show");
+
+      $("#review-order").removeClass("show");
+
+      $("#payment").removeClass("show");
+      $(".shipping-detail-added").removeClass("show");
+      // $(".address-form").show();
+
+      // $("#review-order").hide();
+
+      // $("#payment").hide();
+      // $(".shipping-detail-added").hide();
+    });
+    $(".review-order").click(function (e) {
+      e.preventDefault();
+      $(".payment-form-outer").removeClass("show");
+      $(".payment-review").addClass("show");
+      $("#review-order").addClass("show");
+      $(".edit").addClass("show");
+      $(".payment-edit").addClass("show");
+    });
+    $(".payment-edit").click(function (e) {
+      e.preventDefault();
+      $(this).removeClass("show");
+      $("#payment").removeClass("collapse");
+      $(".payment-review").removeClass("show");
+      $(".payment-form-outer").addClass("show");
+      $("#review-order").removeClass("show");
+    });
+    // $(".rev-order").click(function (e) {
+    //   e.preventDefault();
+    //   $(".payment-form-outer").hide();
+    //   $(".shipping-details").show();
+    //   $("#review-order").show();
+    // });
+
+    //$(".custom-radio-btn").click(function () {
+    //     $(".custom-radio").removeClass("active-btn");
+    //     $(this).parent().addClass("active-btn");
+    //     return false;
+    //   });
+  });
+  // $(window).on("load", function () {
+  //   setTimeout(function () {
+  //     $("#enquirypopup").modal("show");
+  //   }, 3000);
   // });
-
-  jQuery(".login-form").click(function (e) {
-    e.preventDefault();
-    jQuery("#enquirypopup").modal("hide");
-    jQuery("#signinpopup").modal("show");
-  });
-  jQuery(".joinus").click(function (e) {
-    e.preventDefault();
-    jQuery("#signinpopup").modal("hide");
-    jQuery("#enquirypopup").modal("show");
-  });
-});
-
-jQuery(document).ready(function (jQuery) {
-  var open = false;
-
-  var openSidebar = function () {
-    jQuery(".mob-menu").addClass("open");
-    jQuery(".overlay1").addClass("active-opacity");
-    open = true;
-  };
-  var closeSidebar = function () {
-    jQuery(".mob-menu").removeClass("open");
-    jQuery(".overlay1").removeClass("active-opacity");
-    open = false;
-  };
-
-  jQuery(".navbar-toggler-icon, .close-menu").click(function (event) {
-    event.stopPropagation();
-    var toggle = open ? closeSidebar : openSidebar;
-    toggle();
-  });
-
-  jQuery(document).click(function (event) {
-    if (!jQuery(event.target).closest(".mob-menu,.close-menu").length) {
-      closeSidebar();
-    }
-  });
-});
-
-// jQuery(document).ready(function () {
-//   jQuery(".custom-radio-btn").click(function () {
-//     jQuery(".custom-radio").removeClass("active-btn");
-//     jQuery(this).parent().addClass("active-btn");
-//     return false;
-//   });
-// });
+})(jQuery);

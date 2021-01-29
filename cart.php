@@ -1,8 +1,8 @@
 <?php include 'inc/header.php';?>
     <section class="cart-section">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-8">
+        <div class="row justify-content-between px-2 px-md-3">
+          <div class="cart-left-part">
             <h5 class="hn-m">Bag</h5>
             <div class="cart-item d-flex border-bottom">
               <div class="item-thumbnail">
@@ -17,7 +17,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="cart-right-part mt-5 mt-lg-0">
             <h5 class="hn-m">Summary</h5>
             <div class="cart-summary">
               <ul class="p-0 m-0 list-unstyled">
