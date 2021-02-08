@@ -88,21 +88,21 @@
               <div class="selected-shipping-speed">
                 <div class="selected-shipping">
                   <label class="w-100 custom-radio radio_btn_label active m-0">
-                    <input type="radio" id="credit-card" name="selected-payment" class="radio_input" checked>
+                    <input type="radio" name="selected-payment" class="radio_input" checked>
                     <span class="radio_mark payment-name">
                       <strong>Free</strong>
                       Arrives by Thur, Jan 28
                     </span>
                   </label>
                   <label class="w-100 custom-radio radio_btn_label m-0 radio-btn-2">
-                    <input type="radio" id="bit-coin" name="selected-payment" class="radio_input">
+                    <input type="radio" name="selected-payment" class="radio_input">
                     <span class="radio_mark payment-name">
                       <strong>$5.00</strong>
                       Arrives by Tues, Jan 26
                     </span>
                   </label>
                   <label class="w-100 custom-radio radio_btn_label m-0 radio-btn-2">
-                    <input type="radio" id="bit-coin" name="selected-payment" class="radio_input">
+                    <input type="radio" name="selected-payment" class="radio_input">
                     <span class="radio_mark payment-name">
                       <strong>$15.00</strong>
                       Arrives by Mon, Jan 25
@@ -177,7 +177,7 @@
                     <div class="form-group">
                       <label for="points" class="hn-l mb-0">Points Available: <span class="hn-m">12,800</span> </label>
                       <div class="apply-input d-flex justify-content-between">
-                        <input type="text" class="form-control mr-3" placeholder="Use Hush Points" id="points">
+                        <input type="text" class="form-control mr-3" placeholder="Use Hush Points" name="points">
                         <button type="submit" class="btn btn-primary text-uppercase">Apply</button>
                       </div>
                     </div>
@@ -186,7 +186,7 @@
                     <div class="form-group mb-0">
                       <label for="coupon-code" class="hn-l mb-0">Coupon Code</label>
                       <div class="apply-input d-flex justify-content-between">
-                        <input type="text" class="form-control mr-3" placeholder="Enter Coupon Code" id="coupon-code">
+                        <input type="text" class="form-control mr-3" placeholder="Enter Coupon Code" name="coupon-code">
                         <button type="submit" class="btn btn-primary text-uppercase">Apply</button>
                       </div>
                     </div>
@@ -196,12 +196,12 @@
                   <div id="paymentTab" class="radio-features">
                     <div class="radio_tabs d-block d-lg-flex justify-content-between select-payment-option">
                       <label class="custom-radio radio_btn_label active m-0" data-radio="radio_1">
-                        <input type="radio" id="credit-card" name="payment_option" class="radio_input" checked>
+                        <input type="radio" name="payment_option" class="radio_input" checked>
                         <i class="fa fa-credit-card credit-card" aria-hidden="true"></i><span
                           class="radio_mark payment-name">Interac E Transfer</span>
                       </label>
                       <label class="custom-radio radio_btn_label m-0 radio-btn-2" data-radio="radio_2">
-                        <input type="radio" id="bit-coin" name="payment_option" class="radio_input">
+                        <input type="radio" name="payment_option" class="radio_input">
                         <i class="fa fa-btc" aria-hidden="true"></i><span class="radio_mark payment-name">Interac E
                           Transfer</span>
                       </label>
@@ -281,7 +281,7 @@
             </li>
             <li class="justify-content-between estimated d-flex">
               <strong>Estimated Delivery</strong>
-              <span>$$19.00</span>
+              <span>$19.00</span>
             </li>
             <li class="justify-content-between tax d-flex">
               <strong>Taxes</strong>

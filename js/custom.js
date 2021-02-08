@@ -52,6 +52,44 @@
         },
       },
     });
+    // My Account Page Slider//
+    new Swiper(".my-account-page-slider", {
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+      loop: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+
+      coverflow: {
+        rotate: 40,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.1,
+        },
+        768: {
+          slidesPerView: 2.4,
+        },
+        1024: {
+          slidesPerView: 5.3,
+          loop: true,
+        },
+        1920: {
+          slidesPerView: 5.3,
+          loop: true,
+        },
+      },
+    });
 
     $(".open-suite").click(function () {
       $(this).parent().toggleClass("suite-open");
