@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tough Love E-Commerce</title>
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
@@ -40,7 +41,7 @@
         <div class="row">
           <nav class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2">
             <div class="col col-md-2 col-lg-3 px-0">
-              <a class="navbar-brand" href="/" style="width: 82px"><img src="./images/logo2.png" alt=""
+              <a class="navbar-brand" href="/" style="width: 82px"><img src="./images/hushlogonew2x.png" alt=""
                   class="w-100" /></a>
             </div>
             <div

@@ -41,11 +41,11 @@
 
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -61,11 +61,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -81,11 +81,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -101,11 +101,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -121,11 +121,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -141,11 +141,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" width="91" height="91" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Points used: 10,200</h5>
               <p class="item-order-number">Order #: 12345678910111213</p>
@@ -159,6 +159,7 @@
           </div>
         </div>
       </div>
+
 
     </div>
   </div>

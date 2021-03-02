@@ -39,11 +39,11 @@
     <div class="order-list-outer px-2">
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-in-process order-status-pill">Processing</span>
               <h5 class="ordered-item-name">Nike Trainer 3 Baby/Toddler Shoe</h5>
               <p class="item-order-date">Ordered: Jan 22, 2021</p>
@@ -61,11 +61,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-on-hold order-status-pill">On Hold</span>
               <h5 class="ordered-item-name">Nike Trainer 3 Baby/Toddler Shoe</h5>
               <p class="item-order-date">Ordered: Jan 22, 2021</p>
@@ -83,11 +83,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-shipped order-status-pill">Shipped</span>
               <h5 class="ordered-item-name">Nike Trainer 3 Baby/Toddler Shoe</h5>
               <p class="item-order-date">Ordered: Jan 22, 2021</p>
@@ -105,11 +105,11 @@
       </div>
       <div class="order-status-list d-block d-md-flex no-gutters">
         <div class="col-12 col-md-8 d-flex">
-          <div class="row mx-0">
+          <div class="item-card-outer mx-0">
             <div class="item-image-card">
               <img src="./images/210x210.jpg" alt="" class="" />
             </div>
-            <div class="item-detail-card mt-3 mt-md-0">
+            <div class="item-detail-card">
               <span class="order-canceled order-status-pill">Canceled</span>
               <h5 class="ordered-item-name">Nike Trainer 3 Baby/Toddler Shoe</h5>
               <p class="item-order-date">Ordered: Jan 22, 2021</p>

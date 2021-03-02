@@ -38,7 +38,7 @@
               <span>$19.00</span>
             </li>
           </ul>
-          <a href="#" class="checkout btn">Checkout</a>
+          <a href="checkout.php" class="checkout btn">Checkout</a>
         </div>
       </div>
     </div>
