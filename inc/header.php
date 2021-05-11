@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="css/custom.css" />
-  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
 
 </head>
@@ -19,7 +18,7 @@
   <header>
     <div class="top-header secondary-bg-color d-none d-lg-block">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mx-n2">
           <div class="col-12 px-2">
             <ul class="list-unstyled d-flex w-100 justify-content-end m-0 p-0 text-right top-menu">
               <li class="d-inline-block">
@@ -38,14 +37,12 @@
     </div>
     <div class="middle-header py-0 position-relative">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mx-n2">
           <nav class="navbar navbar-expand-md navbar-light d-flex w-100 justify-content-between px-2">
             <div class="col col-md-2 col-lg-3 px-0">
-              <a class="navbar-brand" href="/" style="width: 82px"><img src="./images/hushlogonew2x.png" alt=""
-                  class="w-100" /></a>
+              <a class="navbar-brand" href="/" style="width: 82px"><img src="./images/hushlogonew2x.png" alt="" class="w-100" /></a>
             </div>
-            <div
-              class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view">
+            <div class="col col-md-7 col-lg-6 order-md-2 order-3 order-lg-2 px-0 px-md-2 d-flex justify-content-end justify-content-lg-center tab-view">
               <ul class="mx-0 mt-0 list-unstyled d-flex d-md-none mb-0 header-icon">
                 <li class="cart">
                   <a class="text-decoration-none text-dark" href="cart.php"><img src="images/Image 1.svg" alt="" />
@@ -58,7 +55,6 @@
               <button class="navbar-toggler border-0 float-right px-0">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
               <div class="d-none d-md-block d-lg-block">
                 <ul class="navbar-nav mx-0 w-100 mt-2 mt-lg-0 justify-content-center">
                   <li class="nav-item">
@@ -82,9 +78,7 @@
                 </form>
               </div>
             </div>
-
-            <div
-              class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon">
+            <div class="col col-md-3 col-lg-3 d-none d-md-flex d-lg-flex justify-content-end order-2 order lg-3 px-0 search-and-icon">
               <form class="form-inline my-2 my-lg-0 d-none d-md-block search-form-header" style="max-width: 180px">
                 <input class="form-control w-100 form-input-box" type="search" placeholder="Search" />
               </form>
@@ -124,11 +118,8 @@
           <input class="form-control mr-sm-2" type="search" />
         </form>
       </div>
-
       <div class="overlay1">
-
       </div>
-
       <div id="mob-menu" class="mob-menu position-fixed">
         <span class="d-none close-menu"><i class="fa fa-times"></i></span>
         <ul class="navbar-nav mob-menu-link mx-0 w-100 mt-2 mt-lg-0 justify-content-center">
@@ -160,7 +151,6 @@
         <div class="sidebar-buttons">
           <div class="btn primary-btn px-3 text-white">BTN1</div>
           <div class="btn btn-white border px-3">BTN2</div>
-
         </div>
         <ul class="list-unstyled px-0 mx-0 mob-second-menu mt-4 pt-1">
           <li class="d-flex"><span><i class="fa fa-calendar-check-o mr-3" aria-hidden="true"></i>
@@ -172,14 +162,11 @@
         </ul>
       </div>
     </div>
-
     <div class="bottom-header secondary-bg-color py-3">
       <div class="container-fluid">
-        <div class="row">
-          <p class="w-100 text-center m-0 py-1 hm-r notification position-relative">
-            <span class="position-relative">Free shipping on all orders over $200 within Canada</span>
-          </p>
-        </div>
+        <p class="w-100 text-center m-0 py-1 hm-r notification position-relative">
+          <span class="position-relative">Free shipping on all orders over $200 within Canada</span>
+        </p>
       </div>
     </div>
   </header>
